@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rise of the Guys JSON Patcher</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link id="fav-ico" rel="icon" type="image/x-icon" href="icons/favicon-1.ico">
+<meta name="description" content="Use this tool to make sure your Rise of the Guys JSON files are all up to date!">
+<meta name="author" content="Green Guy">
+<script>
+let num = Math.floor(Math.random() * 6) + 1;
+let favIco = document.querySelector('#fav-ico');
+favIco.href = "icons/favicon-" + num + ".ico"
+</script>
+</head>
+<body>
+<div style="margin:20px">
+<div>
+<div class="Flex1">
+<p class="Title1">RISE
+<p class="Title2">of the
+<p class="Title1">GUYS
+</div>
+<p class="Subtitle">JSON Patcher - v1.0.2</h2>
+</div>
+<div style="padding-top:50px;padding-bottom:20px;">
+<p><textarea autofocus="true" id="textarea" style="width:80%;" rows="8" placeholder="Paste JSON here..."></textarea>
+<p><button type="submit" onclick="patch()">Patch!</button>
+</div>
+<script>
+function patch() {
+	var textarea = document.getElementById("textarea");
+	var json = textarea.value;
+	var old = json;
+	var oldcurrent = json;
+	json = json.replace("R4ElgxE.png","Yuyp3e5.png");
+	json = json.replace("rHcKlaS.png","Yuyp3e5.png");
+	json = json.replace("2lWbL4g.png","Y5znO13.png");
+	json = json.replace("v2pM5GP.png","Y5znO13.png");
+	json = json.replace("F9BGiit.png","jxy9wcw.png");
+	json = json.replace("jXNWXxB.png","jxy9wcw.png");
+	json = json.replace("4UqT9nl.png","WciTxCy.png");
+	json = json.replace("PRxaRSl.png","WciTxCy.png");
+	json = json.replace("84QRBOG.png","OAf4ia1.png");
+	json = json.replace("FgwKBun.png","OAf4ia1.png");
+	json = json.replace("dAEpkzm.png","KEXYKQA.png");
+	json = json.replace("F8VsCnk.png","KEXYKQA.png");
+	while (json != oldcurrent) {
+		var oldcurrent = json;
+		json = json.replace("R4ElgxE.png","Yuyp3e5.png");
+		json = json.replace("rHcKlaS.png","Yuyp3e5.png");
+		json = json.replace("2lWbL4g.png","Y5znO13.png");
+		json = json.replace("v2pM5GP.png","Y5znO13.png");
+		json = json.replace("F9BGiit.png","jxy9wcw.png");
+		json = json.replace("jXNWXxB.png","jxy9wcw.png");
+		json = json.replace("4UqT9nl.png","WciTxCy.png");
+		json = json.replace("PRxaRSl.png","WciTxCy.png");
+		json = json.replace("84QRBOG.png","OAf4ia1.png");
+		json = json.replace("FgwKBun.png","OAf4ia1.png");
+		json = json.replace("dAEpkzm.png","KEXYKQA.png");
+		json = json.replace("F8VsCnk.png","KEXYKQA.png");
+	}
+	textarea.value = json;
+	if (json == old) {
+		window.alert("Nothing to patch.");
+	} else {
+		window.alert("Patch successful!");
+	}
+}
+</script>
+<div style="padding-right:20%">
+<p class="Subtitle">About
+<p>This is a tool for updating Tabletop Simulator .json files into the latest version of Rise of the Guys. Whenever the game updates, the images need to be changed. Simply copy and paste the text of a .json file into the textarea above and hit the patch button to update all image links!
+<p>Windows: By default, your .json files will be located inside "C:\Users\[username]\Documents\My Games\Tabletop Simulator\Saves"
+<p class="Subtitle">Why does this tool exist?
+<p>Tabletop Simulator caches images by default to help load things faster. It recognizes them by link, so if it's a link that it's downloaded from before it will pull an old version from the game files rather than download it again, even if the image is updated by the link. Because of this, I use Imgur to host images, which doesn't allow for images to update. I created this tool to easily update the decks.
+</div>
+</div>
+</body>
+</html>
