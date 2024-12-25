@@ -20,10 +20,10 @@ favIco.href = "icons/favicon-" + num + ".ico"
 <p class="Title2">of the
 <p class="Title1">GUYS
 </div>
-<p class="Subtitle">JSON Patcher - v1.0.2</h2>
+<p class="Subtitle">Tabletop Simulator JSON Patcher</h2>
 </div>
 <div style="padding-top:50px;padding-bottom:20px;">
-<p><textarea autofocus="true" id="textarea" style="width:80%;" rows="8" placeholder="Paste JSON here..."></textarea>
+<p><textarea autofocus="true" id="textarea" style="max-width:1200px;" rows="8" placeholder="Paste JSON here..."></textarea>
 <p><button type="submit" onclick="patch()">Patch!</button>
 </div>
 <script>
@@ -32,32 +32,48 @@ function patch() {
 	var json = textarea.value;
 	var old = json;
 	var oldcurrent = json;
-	json = json.replace("R4ElgxE.png","Yuyp3e5.png");
-	json = json.replace("rHcKlaS.png","Yuyp3e5.png");
-	json = json.replace("2lWbL4g.png","Y5znO13.png");
-	json = json.replace("v2pM5GP.png","Y5znO13.png");
-	json = json.replace("F9BGiit.png","jxy9wcw.png");
-	json = json.replace("jXNWXxB.png","jxy9wcw.png");
-	json = json.replace("4UqT9nl.png","WciTxCy.png");
-	json = json.replace("PRxaRSl.png","WciTxCy.png");
-	json = json.replace("84QRBOG.png","OAf4ia1.png");
-	json = json.replace("FgwKBun.png","OAf4ia1.png");
-	json = json.replace("dAEpkzm.png","KEXYKQA.png");
-	json = json.replace("F8VsCnk.png","KEXYKQA.png");
+	json = json.replace("https://i.imgur.com/aWF7ucy.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/Board.png");
+	json = json.replace("https://i.imgur.com/mUncdhY.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_CardBack.png");
+	json = json.replace("https://i.imgur.com/Yuyp3e5.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-1.png");
+	json = json.replace("https://i.imgur.com/R4ElgxE.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-1.png");
+	json = json.replace("https://i.imgur.com/rHcKlaS.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-1.png");
+	json = json.replace("https://i.imgur.com/Y5znO13.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-2.png");
+	json = json.replace("https://i.imgur.com/2lWbL4g.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-2.png");
+	json = json.replace("https://i.imgur.com/v2pM5GP.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-2.png");
+	json = json.replace("https://i.imgur.com/jxy9wcw.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-3.png");
+	json = json.replace("https://i.imgur.com/F9BGiit.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-3.png");
+	json = json.replace("https://i.imgur.com/jXNWXxB.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-3.png");
+	json = json.replace("https://i.imgur.com/WciTxCy.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-4.png");
+	json = json.replace("https://i.imgur.com/4UqT9nl.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-4.png");
+	json = json.replace("https://i.imgur.com/PRxaRSl.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-4.png");
+	json = json.replace("https://i.imgur.com/OAf4ia1.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-5.png");
+	json = json.replace("https://i.imgur.com/84QRBOG.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-5.png");
+	json = json.replace("https://i.imgur.com/FgwKBun.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-5.png");
+	json = json.replace("https://i.imgur.com/KEXYKQA.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-6.png");
+	json = json.replace("https://i.imgur.com/dAEpkzm.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-6.png");
+	json = json.replace("https://i.imgur.com/F8VsCnk.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-6.png");
 	while (json != oldcurrent) {
 		var oldcurrent = json;
-		json = json.replace("R4ElgxE.png","Yuyp3e5.png");
-		json = json.replace("rHcKlaS.png","Yuyp3e5.png");
-		json = json.replace("2lWbL4g.png","Y5znO13.png");
-		json = json.replace("v2pM5GP.png","Y5znO13.png");
-		json = json.replace("F9BGiit.png","jxy9wcw.png");
-		json = json.replace("jXNWXxB.png","jxy9wcw.png");
-		json = json.replace("4UqT9nl.png","WciTxCy.png");
-		json = json.replace("PRxaRSl.png","WciTxCy.png");
-		json = json.replace("84QRBOG.png","OAf4ia1.png");
-		json = json.replace("FgwKBun.png","OAf4ia1.png");
-		json = json.replace("dAEpkzm.png","KEXYKQA.png");
-		json = json.replace("F8VsCnk.png","KEXYKQA.png");
+		json = json.replace("https://i.imgur.com/aWF7ucy.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/Board.png");
+		json = json.replace("https://i.imgur.com/mUncdhY.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_CardBack.png");
+		json = json.replace("https://i.imgur.com/Yuyp3e5.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-1.png");
+		json = json.replace("https://i.imgur.com/R4ElgxE.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-1.png");
+		json = json.replace("https://i.imgur.com/rHcKlaS.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-1.png");
+		json = json.replace("https://i.imgur.com/Y5znO13.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-2.png");
+		json = json.replace("https://i.imgur.com/2lWbL4g.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-2.png");
+		json = json.replace("https://i.imgur.com/v2pM5GP.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-2.png");
+		json = json.replace("https://i.imgur.com/jxy9wcw.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-3.png");
+		json = json.replace("https://i.imgur.com/F9BGiit.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-3.png");
+		json = json.replace("https://i.imgur.com/jXNWXxB.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-3.png");
+		json = json.replace("https://i.imgur.com/WciTxCy.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-4.png");
+		json = json.replace("https://i.imgur.com/4UqT9nl.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-4.png");
+		json = json.replace("https://i.imgur.com/PRxaRSl.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-4.png");
+		json = json.replace("https://i.imgur.com/OAf4ia1.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-5.png");
+		json = json.replace("https://i.imgur.com/84QRBOG.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-5.png");
+		json = json.replace("https://i.imgur.com/FgwKBun.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-5.png");
+		json = json.replace("https://i.imgur.com/KEXYKQA.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-6.png");
+		json = json.replace("https://i.imgur.com/dAEpkzm.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-6.png");
+		json = json.replace("https://i.imgur.com/F8VsCnk.png","{verifycache}raw.githubusercontent.com/GreenGuy5294/Rise-of-the-Guys/refs/heads/main/_Set01-6.png");
 	}
 	textarea.value = json;
 	if (json == old) {
@@ -67,12 +83,12 @@ function patch() {
 	}
 }
 </script>
-<div style="padding-right:20%">
+<div style="max-width:1200px">
 <p class="Subtitle">About
-<p>This is a tool for updating Tabletop Simulator .json files into the latest version of Rise of the Guys. Whenever the game updates, the images need to be changed. Simply copy and paste the text of a .json file into the textarea above and hit the patch button to update all image links!
-<p>Windows: By default, your .json files will be located inside "C:\Users\[username]\Documents\My Games\Tabletop Simulator\Saves"
+<p>This is a tool for updating Tabletop Simulator .json files into the cached version of Rise of the Guys. If you made your deck before v1.0.3, the links need to be changed. Simply copy and paste the text of a .json file into the textarea above and hit the patch button to update all image links!
+<p>Windows: By default, your .json files will be located inside "C:\Users\[username]\Documents\My Games\Tabletop Simulator\Saves", and saved objects are inside the Saved Objects folder.
 <p class="Subtitle">Why does this tool exist?
-<p>Tabletop Simulator caches images by default to help load things faster. It recognizes them by link, so if it's a link that it's downloaded from before it will pull an old version from the game files rather than download it again, even if the image is updated by the link. Because of this, I use Imgur to host images, which doesn't allow for images to update. I created this tool to easily update the decks.
+<p>Tabletop Simulator caches images by default to help load things faster. I was using Imgur to host the images, since I believed it was not possible to bypass the cache on Tabletop Simulator. I now host my images on Github and can tell Tabletop Simulator to verify the cache each time the game is opened.
 </div>
 </div>
 </body>
