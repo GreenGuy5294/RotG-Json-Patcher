@@ -1,10 +1,17 @@
+:root {
+	--logo-color:#8734b6;
+	--bg-color:#382340;
+	--text-color:#cd96df;
+	--textarea-color:#d8abd6;
+}
+
 @font-face {
 	font-family:latin-wide;
 	src: url(LATINWD.TTF);
 }
 
 body {
-	background-color: #260332;
+	background-color: var(--bg-color);
 }
 .Flex1 {
 	display: flex;
@@ -12,14 +19,14 @@ body {
 .Title1 {
 	font-family: latin-wide;
 	font-size:48px;
-	color: #8734b6;
+	color: var(--logo-color);
 	margin-bottom:-24px;
 	margin-top:-10px;
 }
 .Title2 {
 	font-family: latin-wide;
 	font-size:32px;
-	color: #8734b6;
+	color: var(--logo-color);
 	margin-bottom:-24px;
 	margin-top:-2px;
 	margin-left: 15px;
@@ -31,27 +38,27 @@ body {
 }
 p {
 	font-family: Trebuchet MS;
-	color: #a353d1;
+	color: var(--text-color);
 	font-size:18px;
 }
 textarea {
 	font-family: Trebuchet MS;
 	resize: none;
 	width:90%;
-	font-color:#260332;
-	background-color:#f6deff;
-	border:2px solid #a353d1;
+	color:var(--bg-color);
+	background-color:var(--textarea-color);
+	border:2px solid var(--text-color);
 }
 button {
 	font-family: Trebuchet MS;
 	font-size:24px;
 	cursor: pointer;
 	transition-duration: 0.2s;
-	color:#a353d1;
-	background-color:#260332;
-	border:2px solid #a353d1;
+	color:var(--text-color);
+	background-color:var(--bg-color);
+	border:2px solid var(--text-color);
 	font-weight:bold;
 }
 button:hover {
-	color:#260332;
-	background-color:#a353d1;
+	color:var(--bg-color);
+	background-color:var(--text-color);
